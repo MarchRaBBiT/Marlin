@@ -1416,36 +1416,36 @@ static_assert(X_MAX_LENGTH >= X_BED_SIZE && Y_MAX_LENGTH >= Y_BED_SIZE,
  * Make sure HAVE_TMC26X is warranted
  */
 #if ENABLED(HAVE_TMC26X) && !( \
-         ENABLED( X_IS_TMC26X) \
-      || ENABLED(X2_IS_TMC26X) \
-      || ENABLED( Y_IS_TMC26X) \
-      || ENABLED(Y2_IS_TMC26X) \
-      || ENABLED( Z_IS_TMC26X) \
-      || ENABLED(Z2_IS_TMC26X) \
-      || ENABLED(E0_IS_TMC26X) \
-      || ENABLED(E1_IS_TMC26X) \
-      || ENABLED(E2_IS_TMC26X) \
-      || ENABLED(E3_IS_TMC26X) \
-      || ENABLED(E4_IS_TMC26X) \
+         ENABLED(  X_IS_TMC26X ) \
+      || ENABLED( X2_IS_TMC26X ) \
+      || ENABLED(  Y_IS_TMC26X ) \
+      || ENABLED( Y2_IS_TMC26X ) \
+      || ENABLED(  Z_IS_TMC26X ) \
+      || ENABLED( Z2_IS_TMC26X ) \
+      || ENABLED( E0_IS_TMC26X ) \
+      || ENABLED( E1_IS_TMC26X ) \
+      || ENABLED( E2_IS_TMC26X ) \
+      || ENABLED( E3_IS_TMC26X ) \
+      || ENABLED( E4_IS_TMC26X ) \
   )
   #error "HAVE_TMC26X requires at least one TMC26X stepper to be set."
 #endif
 
 /**
- * TMC2130 Requirements
+ * Make sure HAVE_TMC2130 is warranted
  */
 #if ENABLED(HAVE_TMC2130)
-  #if !( ENABLED( X_IS_TMC2130) \
-      || ENABLED(X2_IS_TMC2130) \
-      || ENABLED( Y_IS_TMC2130) \
-      || ENABLED(Y2_IS_TMC2130) \
-      || ENABLED( Z_IS_TMC2130) \
-      || ENABLED(Z2_IS_TMC2130) \
-      || ENABLED(E0_IS_TMC2130) \
-      || ENABLED(E1_IS_TMC2130) \
-      || ENABLED(E2_IS_TMC2130) \
-      || ENABLED(E3_IS_TMC2130) \
-      || ENABLED(E4_IS_TMC2130) )
+  #if !( ENABLED(  X_IS_TMC2130 ) \
+      || ENABLED( X2_IS_TMC2130 ) \
+      || ENABLED(  Y_IS_TMC2130 ) \
+      || ENABLED( Y2_IS_TMC2130 ) \
+      || ENABLED(  Z_IS_TMC2130 ) \
+      || ENABLED( Z2_IS_TMC2130 ) \
+      || ENABLED( E0_IS_TMC2130 ) \
+      || ENABLED( E1_IS_TMC2130 ) \
+      || ENABLED( E2_IS_TMC2130 ) \
+      || ENABLED( E3_IS_TMC2130 ) \
+      || ENABLED( E4_IS_TMC2130 ) )
     #error "HAVE_TMC2130 requires at least one TMC2130 stepper to be set."
   #elif ENABLED(HYBRID_THRESHOLD) && DISABLED(STEALTHCHOP)
     #error "Enable STEALTHCHOP to use HYBRID_THRESHOLD."
@@ -1559,17 +1559,17 @@ static_assert(X_MAX_LENGTH >= X_BED_SIZE && Y_MAX_LENGTH >= Y_BED_SIZE,
  * Make sure HAVE_L6470DRIVER is warranted
  */
 #if ENABLED(HAVE_L6470DRIVER) && !( \
-         ENABLED( X_IS_L6470) \
-      || ENABLED(X2_IS_L6470) \
-      || ENABLED( Y_IS_L6470) \
-      || ENABLED(Y2_IS_L6470) \
-      || ENABLED( Z_IS_L6470) \
-      || ENABLED(Z2_IS_L6470) \
-      || ENABLED(E0_IS_L6470) \
-      || ENABLED(E1_IS_L6470) \
-      || ENABLED(E2_IS_L6470) \
-      || ENABLED(E3_IS_L6470) \
-      || ENABLED(E4_IS_L6470) \
+         ENABLED(  X_IS_L6470 ) \
+      || ENABLED( X2_IS_L6470 ) \
+      || ENABLED(  Y_IS_L6470 ) \
+      || ENABLED( Y2_IS_L6470 ) \
+      || ENABLED(  Z_IS_L6470 ) \
+      || ENABLED( Z2_IS_L6470 ) \
+      || ENABLED( E0_IS_L6470 ) \
+      || ENABLED( E1_IS_L6470 ) \
+      || ENABLED( E2_IS_L6470 ) \
+      || ENABLED( E3_IS_L6470 ) \
+      || ENABLED( E4_IS_L6470 ) \
   )
   #error "HAVE_L6470DRIVER requires at least one L6470 stepper to be set."
 #endif
